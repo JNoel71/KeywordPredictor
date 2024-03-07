@@ -12,7 +12,7 @@ The data was tokenized using Keras Tokenizer. The titles and abstracts were toke
 ### Neural Network
 The neural network was built to take the tokenized titles and abstracts in different streams before joining them together and producing an output. Custom loss functions were used to ensure loss was properly weighted between different classes as the dataset is imbalanced. An image showing the layout of this network can be seen below.
 
-![Image](.model.png)
+![Image](model.png)
 
 ## Performance
 Below you can find the classification matrix output by the program on an 80-20 train test split.
