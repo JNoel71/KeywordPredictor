@@ -7,7 +7,7 @@ This is a Python repo that constructs a neural network that attempts to predict 
 The data comes from a Kaggle dataset which can be found here https://www.kaggle.com/datasets/spsayakpaul/arxiv-paper-abstracts. The only columns contained in the dataset store the title, abstract, and keywords associated with the manuscript.
 
 ## Data Cleaning/Tokenization
-The data was tokenized using Keras Tokenizer. The titles and abstracts were tokenized such that only the top 50 most common words were used, a list of filler words was also removed such that simple words like 'a', 'the', and 'where', were not included in tokenization.
+The data was tokenized using Keras Tokenizer. The titles and abstracts were tokenized such that only the top 50 most common words were used, a list of filler words was also removed such that simple words like 'a', 'the', and 'where', were not included in tokenization. Keywords were tokenized as well, including obly the 4 most common keywords.
 
 ### Neural Network
 The neural network was built to take the tokenized titles and abstracts in different streams before joining them together and producing an output. Custom loss functions were used to ensure loss was properly weighted between different classes as the dataset is imbalanced. An image showing the layout of this network can be seen below.
